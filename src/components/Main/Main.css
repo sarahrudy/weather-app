@@ -1,0 +1,8 @@
+.Main > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 510px;
+  margin: 0 auto;
+}
