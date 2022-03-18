@@ -1,4 +1,5 @@
 .Main > img {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,3 +7,12 @@
   height: 510px;
   margin: 0 auto;
 }
+
+.temp-container > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+

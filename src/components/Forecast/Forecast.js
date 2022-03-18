@@ -1,6 +1,5 @@
 import './Forecast.css' 
 import cloudDrizzleSun from '../../assets/cloud-drizzle-sun.png'
-import blackCircle from '../../assets/black-circle.png'
 import ForecastCard from '../ForecastCard/ForecastCard'
 
 // get APIcall working first, then come back to this 
