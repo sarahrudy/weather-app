@@ -1,0 +1,17 @@
+.location-and-city-state > img {
+  width: 14px;
+  height: 18px;
+  margin: 10px;
+}
+
+.location-and-city-state > h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.location-and-city-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
