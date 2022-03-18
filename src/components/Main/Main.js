@@ -10,7 +10,7 @@ const Main = () => {
       <div className="temp-container">
         <h3>93°</h3>
         <img src={ cloudSun } alt="cloud in front of sun" />
-        <h4>Partly Cloudy</h4>
+        <h4>Partly Cloudy</h4> 
         <h5>12 mph</h5>
       </div>
       <div className="toggle-switch">
