@@ -9,7 +9,7 @@ import toggle from '../../assets/toggle.png'
 const Main = () => {
   return (
     <div className="Main">
-      <section className="temp">
+      <section className="temp-container">
         <h3>93</h3>
         <img src={ blueCircle }></img>
         <h4>Partly Cloudy</h4>
