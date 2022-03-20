@@ -3,25 +3,34 @@ import { useState, useEffect } from 'react'
 import Header from '../Header/Header'
 import Main from '../Main/Main'
 import Forecast from '../Forecast/Forecast'
-import { getData } from '../../apiCalls'
+import { getAllWeatherData } from '../../apiCalls'
+import loadingIcon from '../../assets/loading.gif'
 
 const App = () => {
-  const [forecast, setForecast ]  = useState([])
+  const [weather, setWeather] = useState({})
+  const [error, setError] = useState(false)
 
-  const setCity = (id) => {
-    getData(id)
-    .then(data => setForecast(data))
-  }
-
-  useEffect(() => {
-    setCity('4684888')
+  useEffect (() => {
+    getAllWeatherData()
+    .then(data => setWeather(data))
+    .catch(error => setError(error))
   }, [])
-  
+
+// dynamic for fetching different cities by ID
+//  const setCity = (id) => {
+//     getWeatherData(id)
+//     .then(data => setCurrentWeather(data))
+//   }
+
+//   useEffect(() => {
+//     setCity('4684888')
+//   }, [])
+
   return (
     <div className="App">
       <Header />
-      <Main />
-      <Forecast />
+      <Main weather={ weather }/> 
+      <Forecast weather={ weather } />
     </div>
   );
 }

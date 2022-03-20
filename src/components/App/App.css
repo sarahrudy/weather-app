@@ -6,7 +6,7 @@
 
 
 body, html {
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to right, rgba(16,93,163,1), rgba(77,206,236,1));
   font-family: 'Open Sans', sans-serif;
 }
 
