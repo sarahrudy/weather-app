@@ -4,7 +4,6 @@ import Header from '../Header/Header'
 import Main from '../Main/Main'
 import Forecast from '../Forecast/Forecast'
 import { getAllWeatherData } from '../../apiCalls'
-import loadingIcon from '../../assets/loading.gif'
 
 const App = () => {
   const [weather, setWeather] = useState({})
@@ -19,7 +18,6 @@ const App = () => {
 
   const handleToggle = () => {
     setIsF(!isF)
-    console.log(isF)
   }
 
   return (
