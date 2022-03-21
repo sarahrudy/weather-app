@@ -52,6 +52,8 @@
   width: 70%;
   height: auto;
   margin: 0 auto;
+  box-shadow: 0 10px 100px 0 rgb(0 0 0 / 20%),
+  0 0.6px 10px 0 rgb(0 0 0 / 40%);
 }
 
 .cloud-left {
@@ -66,9 +68,4 @@
   width: 20%;
   top: 25%;
   right: 8%;
-  /* transform: translate(-50%, -50%); */
 }
-
-
-
-
