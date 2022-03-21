@@ -6,7 +6,7 @@
 .temp-container {
   display: flex;
   position: absolute;
-  height: 6%;
+  height: 8%;
   width: 50%;
   top: 17%;
   left: 18%;
@@ -14,12 +14,12 @@
 
 .temp-container > h3 {
   color: #65b0d6;
-  font-size: 5vh;
+  font-size: 8vh;
   font-weight: 500;
 }
 
 .temp-container > img {
-  width: 5vh;
+  width: 4vw;
   height: auto;
   margin: 0 10px 0 0;
   align-self: flex-end;
@@ -41,7 +41,7 @@
 .weather-condition-plus-wind > h4,
 .weather-condition-plus-wind > h5 {
   color: #65b0d6;
-  font-size: 1.5vh;
+  font-size: 1.8vh;
 }
 
 .city-image {
@@ -59,14 +59,14 @@
 .cloud-left {
   position: absolute;
   width: 15%;
-  top: 30%;
+  top: 36%;
   left: 6%;
 }
 
 .cloud-right {
   position: absolute;
   width: 20%;
-  top: 24%;
+  top: 27%;
   right: 8%;
 }
 
