@@ -5,6 +5,7 @@ import rain from '../../assets/rain.png'
 import snow from '../../assets/snow.png'
 import clear from '../../assets/clear.png'
 import clouds from '../../assets/cloud-sun.png'
+import mist from '../../assets/mist.png'
 
 
 const ForecastCard = ({ day, weatherCondition, temperature }) => {
@@ -15,7 +16,8 @@ const ForecastCard = ({ day, weatherCondition, temperature }) => {
     "Rain": rain,
     "Snow": snow,
     "Clear": clear,
-    "Clouds": clouds 
+    "Clouds": clouds,
+    "Mist": mist,
   }
 
   return (
