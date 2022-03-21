@@ -8,7 +8,7 @@ import clouds from '../../assets/cloud-sun.png'
 import mist from '../../assets/mist.png'
 
 
-const ForecastCard = ({ day, weatherCondition, temperature }) => {
+const ForecastCard = ({ day, weatherCondition, temperature, isF }) => {
 
   const weatherMap = {
     "Thunderstorm": thunderstorm,
@@ -20,12 +20,15 @@ const ForecastCard = ({ day, weatherCondition, temperature }) => {
     "Mist": mist,
   }
 
+ const tempF = temperature
+ const tempC = Math.round((tempF - 30) /2)
+
   return (
     <section className="ForecastCard">
       <div className="day-container">
         <h3>{ day }</h3>
         <img src={ weatherMap[weatherCondition] } alt="weather image"></img>
-        <h4>{ temperature }°</h4>
+        { (isF) ? <h4>{ temperature }°</h4> : <h4>{ tempC }°</h4> }
       </div>
     </section>
   )
