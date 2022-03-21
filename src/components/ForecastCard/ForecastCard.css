@@ -41,4 +41,8 @@
   .day-container > h4 {
     margin: 20px;
   }
+
+  .day-container > h3 {
+    font-size: 15px;
+  }
 }

@@ -28,9 +28,8 @@ const Main = ({ weather, isF, handleToggle }) => {
   }
 
   const tempF = Math.round(weather.current.temp)
-  const tempC = (tempF - 30) /2
+  const tempC = Math.round((tempF - 30) /2)
 
-  console.log(weather)
   return (
     <div className="Main">
       <div className="top-elements">
