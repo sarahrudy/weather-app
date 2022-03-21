@@ -1,0 +1,9 @@
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 30%;
+  background-color: white;
+  margin: 0 auto;
+}

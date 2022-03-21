@@ -1,18 +1,64 @@
-.Main > img {
-  position: absolute;
+.top-elements {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 800px;
-  height: 510px;
-  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.temp-container {
+  display: flex;
+  height: 70px;
+}
+
+.temp-container > h3 {
+  color: #65b0d6;
+  font-size: 55px;
+  font-weight: 400;
 }
 
 .temp-container > img {
+  width: 55px;
+  height: 55px;
+  margin: 0 10px 0 10px;
+  align-self: flex-end;
+}
+
+.weather-condition-plus-wind {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0 10px 0 0
+}
+
+.weather-condition-plus-wind > h4,
+.weather-condition-plus-wind > h5 {
+  color: #65b0d6;
+  font-size: 15px;
+}
+
+.city-image {
+  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
 }
+
+.cloud-left {
+  position: absolute;
+  width: 15%;
+  top: 45%;
+  left: 6%;
+}
+
+.cloud-right {
+  position: absolute;
+  width: 20%;
+  top: 35%;
+  right: 8%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+
 

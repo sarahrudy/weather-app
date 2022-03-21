@@ -23,22 +23,28 @@ const Main = ({ weather }) => {
   if(!weather.current) {
     return <h2>is loading...</h2>
   }
+  
+  console.log(weather.current)
 
   return (
     <div className="Main">
-      <div className="temp-container">
-        <h3>{ Math.round(weather.current.temp) }°</h3>
-        <img src={ weatherMap[weather.current.weather[0].main] } alt="cloud in front of sun" />
-        <h4>{ weather.current.weather[0].main }</h4> 
-        <h5>{ Math.round(weather.current.wind_speed) } mph</h5>
-      </div>
-      <div className="toggle-switch">
-        <input type="checkbox" name="toggleSwitch" id="toggleSwitch" value="C°"/>
-        <label className="toggle-switch-label" htmlFor="toggleSwtich">C°</label>
+      <div className="top-elements">
+        <div className="temp-container">
+          <h3>{ Math.round(weather.current.temp) }°</h3>
+          <img src={ weatherMap[weather.current.weather[0].main] } alt="cloud in front of sun" />
+          <div className="weather-condition-plus-wind">
+            <h4>{ weather.current.weather[0].main }</h4> 
+            <h5>{ Math.round(weather.current.wind_speed) } mph</h5>
+          </div>
+        </div>
+        <div className="toggle-switch">
+          <input type="checkbox" name="toggleSwitch" id="toggleSwitch" value="C°"/>
+          <label className="toggle-switch-label" htmlFor="toggleSwtich">C°</label>
+        </div>
       </div>
       <div className="clouds-and-city">
-        <img className="cloud-left" src={ cloudLeft } alt="cloud"></img>
         <img className="city-image" src={ cityImage } alt="city skyline"></img>
+        <img className="cloud-left" src={ cloudLeft } alt="cloud"></img>
         <img className="cloud-right" src={ cloudRight } alt="cloud"></img>
       </div>
     </div>

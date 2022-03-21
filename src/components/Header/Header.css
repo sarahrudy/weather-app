@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 23px;
+  margin-top: 10vh;
 }
 
 .location-and-city-state > img {

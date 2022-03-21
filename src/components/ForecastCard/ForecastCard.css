@@ -1,3 +1,16 @@
 .ForecastCard {
   background-color: white;
 }
+
+.day-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.day-container > img {
+  width: 40px;
+  height: 40px;
+}
