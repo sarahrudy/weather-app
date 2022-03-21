@@ -1,18 +1,24 @@
 import './Main.css'
 import cityImage from '../../assets/city-image.png'
-import cloudSun from '../../assets/cloud-sun.png'
 import cloudLeft from '../../assets/cloud-left.png'
 import cloudRight from '../../assets/cloud-right.png'
-import clear from '../../assets/sunny.png'
+import thunderstorm from '../../assets/storm.png'
+import drizzle from '../../assets/drizzle.png'
+import rain from '../../assets/rain.png'
+import snow from '../../assets/snow.png'
+import clear from '../../assets/clear.png'
+import clouds from '../../assets/cloud-sun.png'
 
 const Main = ({ weather }) => {
-  console.log(weather)
 
-// weather map for weather images 
-//   const weatherMap = {
-//   "clear": "sunny.png",
-//   "scattered-showers": "rainy.png",
-// }
+  const weatherMap = {
+    "Thunderstorm": thunderstorm,
+    "Drizzle": drizzle,
+    "Rain": rain,
+    "Snow": snow,
+    "Clear": clear,
+    "Clouds": clouds 
+  }
 
   if(!weather.current) {
     return <h2>is loading...</h2>
@@ -22,7 +28,7 @@ const Main = ({ weather }) => {
     <div className="Main">
       <div className="temp-container">
         <h3>{ Math.round(weather.current.temp) }°</h3>
-        <img src={ cloudSun } alt="cloud in front of sun" />
+        <img src={ weatherMap[weather.current.weather[0].main] } alt="cloud in front of sun" />
         <h4>{ weather.current.weather[0].main }</h4> 
         <h5>{ Math.round(weather.current.wind_speed) } mph</h5>
       </div>
