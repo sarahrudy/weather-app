@@ -8,7 +8,7 @@
   position: absolute;
   height: 6%;
   width: 50%;
-  top: 18%;
+  top: 17%;
   left: 18%;
 }
 
@@ -59,13 +59,59 @@
 .cloud-left {
   position: absolute;
   width: 15%;
-  top: 31%;
+  top: 30%;
   left: 6%;
 }
 
 .cloud-right {
   position: absolute;
   width: 20%;
-  top: 25%;
+  top: 24%;
   right: 8%;
+}
+
+@media (hover:hover) {
+  .cloud-left:hover,
+  .cloud-right:hover {
+    transform: skew(-20deg)
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cloud-left {
+    top: 25%;
+  }
+
+  .cloud-right {
+    top: 22%;
+  }
+
+  .toggle-switch {
+    top: 18%;
+  }
+
+  .weather-condition-plus-wind {
+    flex-direction: row;
+    align-self: flex-start;
+  }
+
+  .temp-container > img,
+  .weather-condition-plus-wind > h4,
+  .weather-condition-plus-wind > h5 {
+    align-self: flex-start;
+    margin: 6px;
+  }
+
+  .temp-container > img {
+    width: 8vw;
+  }
+
+  .temp-container > h3 {
+    font-size: 4vh;
+  }
+  
+  .city-image {
+    box-shadow: 0 10px 100px rgb(0 0 0 / 50%),
+    0 10px 10px rgb(0 0 0 / 50%);
+  }
 }
