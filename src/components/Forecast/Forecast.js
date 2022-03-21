@@ -25,7 +25,7 @@ const Forecast = ({ weather }) => {
   })
 
   return (
-    <div className="forecast-container">{ forecastCard }</div>
+    <div className="forecast-container">{ forecastCard.slice(1, 6) }</div>
   )
 }
 
