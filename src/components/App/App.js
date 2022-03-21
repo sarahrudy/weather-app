@@ -26,7 +26,7 @@ const App = () => {
     <div className="App">
       <Header weather={ weather } />
       <Main weather={ weather } isF={ isF } handleToggle={ handleToggle } /> 
-      <Forecast weather={ weather } />
+      <Forecast weather={ weather } isF={ isF } />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import './Forecast.css' 
 import ForecastCard from '../ForecastCard/ForecastCard'
 
-const Forecast = ({ weather }) => {
+const Forecast = ({ weather, isF }) => {
 
   if(!weather.daily) {
     return <h2>is loading...</h2>
@@ -19,6 +19,7 @@ const Forecast = ({ weather }) => {
           day={ day }
           weatherCondition={ forecast.weather[0].main }
           temperature={ Math.round(forecast.temp.day) }
+          isF={ isF }
         />
       </div>
     )
