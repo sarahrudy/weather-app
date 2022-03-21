@@ -5,20 +5,30 @@
 
 .temp-container {
   display: flex;
-  height: 70px;
+  position: absolute;
+  height: 6%;
+  width: 50%;
+  top: 18%;
+  left: 18%;
 }
 
 .temp-container > h3 {
   color: #65b0d6;
-  font-size: 55px;
-  font-weight: 400;
+  font-size: 5vh;
+  font-weight: 500;
 }
 
 .temp-container > img {
-  width: 55px;
-  height: 55px;
-  margin: 0 10px 0 10px;
+  width: 5vh;
+  height: auto;
+  margin: 0 10px 0 0;
   align-self: flex-end;
+}
+
+.toggle-switch {
+  position: absolute;
+  top: 20%;
+  right: 18%;
 }
 
 .weather-condition-plus-wind {
@@ -31,7 +41,7 @@
 .weather-condition-plus-wind > h4,
 .weather-condition-plus-wind > h5 {
   color: #65b0d6;
-  font-size: 15px;
+  font-size: 1.5vh;
 }
 
 .city-image {
@@ -47,14 +57,14 @@
 .cloud-left {
   position: absolute;
   width: 15%;
-  top: 45%;
+  top: 31%;
   left: 6%;
 }
 
 .cloud-right {
   position: absolute;
   width: 20%;
-  top: 35%;
+  top: 25%;
   right: 8%;
   /* transform: translate(-50%, -50%); */
 }
