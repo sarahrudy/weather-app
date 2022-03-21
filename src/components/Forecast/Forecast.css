@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   width: 70%;
   height: 30%;
   background-color: white;
