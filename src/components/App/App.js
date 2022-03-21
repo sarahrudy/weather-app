@@ -16,20 +16,10 @@ const App = () => {
     .catch(error => setError(error))
   }, [])
 
-// dynamic for fetching different cities by ID
-//  const setCity = (id) => {
-//     getWeatherData(id)
-//     .then(data => setCurrentWeather(data))
-//   }
-
-//   useEffect(() => {
-//     setCity('4684888')
-//   }, [])
-
   return (
     <div className="App">
-      <Header />
-      <Main weather={ weather }/> 
+      <Header weather={ weather } />
+      <Main weather={ weather } /> 
       <Forecast weather={ weather } />
     </div>
   );
