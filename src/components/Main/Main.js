@@ -8,8 +8,10 @@ import rain from '../../assets/rain.png'
 import snow from '../../assets/snow.png'
 import clear from '../../assets/clear.png'
 import clouds from '../../assets/cloud-sun.png'
+import mist from '../../assets/mist.png'
+import Toggle from '../Toggle/Toggle'
 
-const Main = ({ weather }) => {
+const Main = ({ weather, isF, handleToggle }) => {
 
   const weatherMap = {
     "Thunderstorm": thunderstorm,
@@ -17,18 +19,23 @@ const Main = ({ weather }) => {
     "Rain": rain,
     "Snow": snow,
     "Clear": clear,
-    "Clouds": clouds 
+    "Clouds": clouds,
+    "Mist": mist,
   }
 
   if(!weather.current) {
     return <h2>is loading...</h2>
   }
 
+  const tempF = Math.round(weather.current.temp)
+  const tempC = (tempF - 30) /2
+
+  console.log(weather)
   return (
     <div className="Main">
       <div className="top-elements">
         <div className="temp-container">
-          <h3>{ Math.round(weather.current.temp) }°</h3>
+          { (isF) ? <h3>{ tempF }°</h3> : <h3>{ tempC }°</h3> }
           <img src={ weatherMap[weather.current.weather[0].main] } alt="cloud in front of sun" />
           <div className="weather-condition-plus-wind">
             <h4>{ weather.current.weather[0].main }</h4> 
@@ -36,8 +43,7 @@ const Main = ({ weather }) => {
           </div>
         </div>
         <div className="toggle-switch">
-          <input type="checkbox" name="toggleSwitch" id="toggleSwitch" value="C°"/>
-          <label className="toggle-switch-label" htmlFor="toggleSwtich">C°</label>
+          <Toggle degrees={ isF } handleToggle={ handleToggle }/>
         </div>
       </div>
       <div className="clouds-and-city">
