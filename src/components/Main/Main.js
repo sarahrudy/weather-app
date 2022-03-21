@@ -23,8 +23,6 @@ const Main = ({ weather }) => {
   if(!weather.current) {
     return <h2>is loading...</h2>
   }
-  
-  console.log(weather.current)
 
   return (
     <div className="Main">
