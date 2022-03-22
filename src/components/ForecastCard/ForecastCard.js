@@ -6,6 +6,8 @@ import snow from '../../assets/snow.png'
 import clear from '../../assets/clear.png'
 import clouds from '../../assets/cloud-sun.png'
 import mist from '../../assets/mist.png'
+import fog from '../../assets/fog.png'
+import tornado from '../../assets/tornado.png'
 
 
 const ForecastCard = ({ day, weatherCondition, temperature, isF }) => {
@@ -18,6 +20,15 @@ const ForecastCard = ({ day, weatherCondition, temperature, isF }) => {
     "Clear": clear,
     "Clouds": clouds,
     "Mist": mist,
+    "Smoke": fog,
+    "Haze":  fog,
+    "Dust": fog,
+    "Fog": fog,
+    "Sand": fog,
+    "Dust": fog,
+    "Ash": fog,
+    "Squall": mist,
+    "Tornado": tornado,
   }
 
  const tempF = temperature
