@@ -7,7 +7,7 @@ View the [deployed link](https://weather-sr.surge.sh/) here!
 ## API 
 This application uses [OpenWeatherMap API](https://openweathermap.org/api) to fetch live data for the current weather and forecast. 
 
-### Future Additions
+## Future Additions
 - Ability to search multiple cities 
 - Background that matches weather forecast
 - More weather details if user clicks on a day in the forecast (i.e. min/max temperatures for the day) 
