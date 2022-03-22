@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Weather App
+This was a take home challenge where I was asked to build a very simple weather application by matching a comp provided. The user is able to see the weather for Dallas, TX on page load and user is able to quickly toggle between Fahrenheit and Celcius by clicking on the button. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployed Link
+View the [deployed link] here!(https://weather-sr.surge.sh/)
 
-## Available Scripts
+## API 
+This application uses [OpenWeatherMap API](https://openweathermap.org/api) to fetch live data for the current weather and forecast. 
 
-In the project directory, you can run:
+### Example Response 
+{
+  "lat": 33.44,
+  "lon": -94.04,
+  "timezone": "America/Chicago",
+  "timezone_offset": -21600,
+  "current": {
+    "dt": 1618317040,
+    "sunrise": 1618282134,
+    "sunset": 1618333901,
+    "temp": 284.07,
+    "feels_like": 282.84,
+    "pressure": 1019,
+    "humidity": 62,
+    "dew_point": 277.08,
+    "uvi": 0.89,
+    "clouds": 0,
+    "visibility": 10000,
+    "wind_speed": 6,
+    "wind_deg": 300,
+    "weather": [
+      {
+        "id": 500,
+        "main": "Rain",
+        "description": "light rain",
+        "icon": "10d"
+      }
+    ],
+    "rain": {
+      "1h": 0.21
+    }
+  },
+    "minutely": [
+    {
+      "dt": 1618317060,
+      "precipitation": 0.205
+    },
+    ...
+  },
+    "hourly": [
+    {
+      "dt": 1618315200,
+      "temp": 282.58,
+      "feels_like": 280.4,
+      "pressure": 1019,
+      "humidity": 68,
+      "dew_point": 276.98,
+      "uvi": 1.4,
+      "clouds": 19,
+      "visibility": 306,
+      "wind_speed": 4.12,
+      "wind_deg": 296,
+      "wind_gust": 7.33,
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02d"
+        }
+      ],
+      "pop": 0
+    },
+    ...
+  }
+    "daily": [
+    {
+      "dt": 1618308000,
+      "sunrise": 1618282134,
+      "sunset": 1618333901,
+      "moonrise": 1618284960,
+      "moonset": 1618339740,
+      "moon_phase": 0.04,
+      "temp": {
+        "day": 279.79,
+        "min": 275.09,
+        "max": 284.07,
+        "night": 275.09,
+        "eve": 279.21,
+        "morn": 278.49
+      },
+      "feels_like": {
+        "day": 277.59,
+        "night": 276.27,
+        "eve": 276.49,
+        "morn": 276.27
+      },
+      "pressure": 1020,
+      "humidity": 81,
+      "dew_point": 276.77,
+      "wind_speed": 3.06,
+      "wind_deg": 294,
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": 56,
+      "pop": 0.2,
+      "rain": 0.62,
+      "uvi": 1.93
+    },
+    ...
 
-### `npm start`
+### Future Additions
+- Ability to search multiple cities 
+- Background that matches weather forecast
+- More weather details if user clicks on a day in the forecast (i.e. min/max temperatures for the day) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
