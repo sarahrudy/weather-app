@@ -1,5 +1,5 @@
 # Weather App
-This was a take home challenge where I was asked to build a very simple weather application by matching a comp provided. The user is able to see the weather for Dallas, TX on page load and user is able to quickly toggle between Fahrenheit and Celcius by clicking on the button. 
+This was a take home challenge where I was asked to build a very simple weather application by matching a comp provided. The user is able to see the weather for Dallas, TX on page load and user is able to quickly toggle between Fahrenheit and Celcius by clicking on the toggle button. 
 
 ## Deployed Link
 View the [deployed link](https://weather-sr.surge.sh/) here!
