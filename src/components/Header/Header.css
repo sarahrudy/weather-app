@@ -1,0 +1,33 @@
+.Header {
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+}
+
+.location-and-city-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+}
+
+.location-and-city-state > img {
+  width: 14px;
+  height: 18px;
+  margin: 10px;
+}
+
+.location-and-city-state > h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}

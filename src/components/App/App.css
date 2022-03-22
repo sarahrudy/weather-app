@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body, html {
+  background-image: linear-gradient(to right, rgba(16,93,163,1), rgba(77,206,236,1));
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,116 @@
+.top-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temp-container {
+  display: flex;
+  position: absolute;
+  height: 8%;
+  width: 50%;
+  top: 17%;
+  left: 18%;
+}
+
+.temp-container > h3 {
+  color: #65b0d6;
+  font-size: 7.5vh;
+  font-weight: 500;
+}
+
+.temp-container > img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  align-self: flex-end;
+}
+
+.toggle-switch {
+  position: absolute;
+  top: 18%;
+  right: 18%;
+}
+
+.weather-condition-plus-wind {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0 10px 0 0
+}
+
+.weather-condition-plus-wind > h4,
+.weather-condition-plus-wind > h5 {
+  color: #65b0d6;
+  font-size: 1.8vh;
+}
+
+.city-image {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 10px 100px 0 rgb(0 0 0 / 20%),
+  0 0.6px 10px 0 rgb(0 0 0 / 40%);
+}
+
+.cloud-left {
+  position: absolute;
+  width: 15%;
+  top: 36%;
+  left: 6%;
+}
+
+.cloud-right {
+  position: absolute;
+  width: 20%;
+  top: 27%;
+  right: 8%;
+}
+
+@media (hover:hover) {
+  .cloud-left:hover,
+  .cloud-right:hover {
+    transform: skew(-20deg)
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cloud-left {
+    top: 25%;
+  }
+
+  .cloud-right {
+    top: 22%;
+  }
+
+  .toggle-switch {
+    top: 16%;
+  }
+
+  .weather-condition-plus-wind {
+    display: none;
+  }
+
+  .temp-container > img,
+  .weather-condition-plus-wind > h4,
+  .weather-condition-plus-wind > h5 {
+    align-self: flex-start;
+    margin: 6px;
+  }
+
+  .temp-container > img {
+    width: 8vw;
+  }
+
+  .temp-container > h3 {
+    font-size: 4vh;
+  }
+  
+  .city-image {
+    box-shadow: 0 10px 100px rgb(0 0 0 / 50%),
+    0 10px 10px rgb(0 0 0 / 50%);
+  }
+}

@@ -1,0 +1,47 @@
+.ForecastCard {
+  background-color: white;
+}
+
+.day-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.day-container > h3 {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.day-container > img {
+  width: 40px;
+  height: 40px;
+}
+
+.day-container > h4 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+  .day-container {
+    flex-direction: row;
+    align-items: center;
+    border-top: 0.5px solid gray;
+  }
+
+  .day-container > h3,
+  .day-container > img,
+  .day-container > h4 {
+    margin: 20px;
+  }
+
+  .day-container > h3 {
+    font-size: 15px;
+  }
+}
