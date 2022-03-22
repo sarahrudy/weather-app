@@ -1,6 +1,4 @@
 import './Toggle.css'
-import { useState } from 'react'
-import Switch from 'react-switch'
 
 const Toggle = ({isF, handleToggle}) => {
   return (
@@ -12,10 +10,7 @@ const Toggle = ({isF, handleToggle}) => {
         id={`react-switch-new`}
         type="checkbox"
       />
-      <label
-        className="react-switch-label"
-        htmlFor={`react-switch-new`}
-      >
+      <label className="react-switch-label" htmlFor={`react-switch-new`} >
         <span className={`react-switch-button`} />
       </label>
     </>

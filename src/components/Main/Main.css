@@ -91,8 +91,7 @@
   }
 
   .weather-condition-plus-wind {
-    flex-direction: row;
-    align-self: flex-start;
+    display: none;
   }
 
   .temp-container > img,
