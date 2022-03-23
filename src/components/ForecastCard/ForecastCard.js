@@ -32,7 +32,7 @@ const ForecastCard = ({ day, weatherCondition, temperature, isF }) => {
   }
 
  const tempF = temperature
- const tempC = Math.round((tempF - 30) /2)
+ const tempC = Math.round((tempF - 32) / (5/9))
 
   return (
     <section className="ForecastCard">
